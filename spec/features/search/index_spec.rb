@@ -22,6 +22,9 @@ RSpec.describe 'Search results index' do
     click_on 'Search For Members'
 
     expect(current_path).to eq('/search')
-    expect(page).to have_content()
+    expect(page).to have_content('Total members: 21')
+    expect(page).to have_content('Sirius Black')
+    expect(page).to have_content('jack russell terrier')
+
   end
 end
