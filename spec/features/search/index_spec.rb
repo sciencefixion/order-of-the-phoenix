@@ -22,6 +22,6 @@ RSpec.describe 'Search results index' do
     click_on 'Search For Members'
 
     expect(current_path).to eq('/search')
-    
+    expect(page).to have_content()
   end
 end
