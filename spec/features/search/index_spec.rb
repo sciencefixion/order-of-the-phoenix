@@ -18,5 +18,10 @@ RSpec.describe 'Search results index' do
   it "displays a list of memebers of the Order of the Phoenix when a House is selected on the welcome index" do
     visit '/'
 
+    select 'Gryffindor', from: 'house'
+    click_on 'Search For Members'
+
+    expect(current_path).to eq('/search')
+    
   end
 end
