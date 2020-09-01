@@ -5,19 +5,6 @@ class SearchResults
       character_result(character_data)
     end
   end
-  #
-  # def movie_search_results(search_query)
-  #   json = service.search_results(search_query)
-  #   movies = json[:results].map do |movie_data|
-  #     movie_result(movie_data)
-  #   end
-  #   movies.first(40)
-  # end
-  #
-  # def details(movie_id)
-  #   json = service.movie_data(movie_id)
-  #   movie_result(json)
-  # end
 
 
   private
